@@ -9,9 +9,9 @@ working right with basic authentication. It should also work on a server
 with digest authentication, although I haven't tested it against a real
 server using digest authentication.
 
-To use it, create a file called *authinfo.yml* with your login credentials
+To use it, create a file called __authinfo.yml__ with your login credentials
 in the config directory. An example is shown in
-*config/authinfo.example.yml*. Then run the proxy like this:
+__config/authinfo.example.yml__. Then run the proxy like this:
 
     ruby lib/proxy.rb
 
