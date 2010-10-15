@@ -13,7 +13,7 @@ To use it, create a file called authinfo.yml with your login credentials
 in the config directory. An example is shown in
 config/authinfo.example.yml. Then run the proxy like this:
 
- ruby lib/proxy.rb`
+    ruby lib/proxy.rb
 
 You'll need to tell your client to use the proxy. To do that in
 selenium, you can use something like this:
