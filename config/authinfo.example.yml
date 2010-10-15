@@ -1,0 +1,7 @@
+---
+- host: my.server.com
+  username: arthur
+  password: gwenevere
+- host: 10.47.27.144
+  username: user
+  password: pass
