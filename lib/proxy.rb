@@ -42,6 +42,7 @@ class ProxyServer
                                                  authenticate_header,
                                                  server)
       req.header.merge!('Authorization' => [authorization_header])
+      @server.logger.log(WEBrick::Log::INFO, "AuthProxy added Authorization header for recognized host \"#{uri.host}\"")
     end
   end
 
