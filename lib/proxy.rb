@@ -76,6 +76,10 @@ end
 
 if __FILE__ == $0
   ps = ProxyServer.new
-  %w[INT HUP].each { |signal| trap(signal) { ps.stop } }
+
+  # check for unix-like platform and daemonize if so
+  NIX = File.exist?('/dev/null') and !File.exist?('/NUL')
+  %w[INT HUP].each { |signal| trap(signal) { ps.stop } } if NIX
+  
   ps.start
 end
